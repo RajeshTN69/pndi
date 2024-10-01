@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-size: 300% 300%;
+    background-color: black;
+    margin-bottom: 200px;
+    animation: ani 4s linear infinite;
+
+}
+.cont1{
+    width: 700px;
+    height: 850px;
+    filter: blur(20px);
+    filter: grayscale(30px);
+    backdrop-filter: blur(100px);
+    
+}
+
+.container {
+    background: white;
+    width: 600px; /* Fixed width for the chat container */
+    margin: 50px auto; /* Centered horizontally */
+    height: 820px;
+     /* White background for chat */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 5px 10px red; /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Flex column for layout */
+    
+    border: 1px solid rgb(238, 235, 235);
+    backdrop-filter: blur(100%);
+    
+    
+}
+
+
+.messages {
+    flex: 1; /* Take up remaining space */
+    padding: 10px; /* Padding for messages area */
+    overflow-y: auto; /* Enable scrolling for long message lists */
+}
+
+.message {
+    margin: 5px 0; /* Space between messages */
+    padding: 10px; /* Padding for each message */
+    border-radius: 5px; /* Rounded corners for messages */
+}
+
+.sent {
+    background: linear-gradient(to right, rgb(247, 240, 240),rgb(238, 43, 228)); /* Light green for sent messages */
+    text-align: right; /* Align text to the right */
+    margin-bottom: 15px;
+    margin-top: 15px;
+    box-shadow: 2px 4px 6px #131414;
+}
+
+.received {
+    background:linear-gradient(to left,rgb(245, 244, 244),rgb(35, 243, 115)); /* Light grey for received messages */
+    text-align: left; /* Align text to the left */
+    box-shadow: 2px 4px 6px white;
+
+}
+
+
+
+#messageInput[type="text"] {
+     /* Take up remaining space */
+     /* Padding for input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners for input */
+    margin-right: 10px; /* Space between input and button */
+    height: 50px;
+    font-size: 20px;
+    width: 560px;
+    margin-left: 15px;
+}
+
+#sendButton,#voiceButton{
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    width: 200px;
+    margin-top: 20px;
+    color: black;
+    height: 50px;
+    gap: 30px;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #0095f6; /* Instagram blue */
+    /* White text */
+    font-size: 20px;
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover {
+    background-color: #007bbf; /* Darker blue on hover */
+}
+.sep{
+    height: 50px;
+    margin-right: 100px;
+    width: 600px;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+button{
+    background-color: #0095f6;
+    width: 210px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+margin-bottom: 30px;
+margin-left: 10px;
+height: 50px;
+margin-right: 10px;
+}
+.mydiv{
+    height: 70px;
+    margin-right: 400px;
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    
+    margin-left: 5px;
+    
+}
+#fileInput{
+    margin-top: 20px;
+    size: 300px;
+    border-radius: 5px;
+    background-color: #0095f6;
+    width: 170px;
+    height: 50px;
+
+}
